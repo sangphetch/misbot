@@ -12,16 +12,7 @@ $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
  
  
- {
-  "size": {
-    "width": 2500,
-    "height": 1686
-  },
-  "selected": true,
-  "name": "Rich Menu 1",
-  "chatBarText": "Bulletin",
-  "areas": []
-}
+
  
  
  
