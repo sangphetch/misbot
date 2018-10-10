@@ -44,7 +44,7 @@ else if($arrJson['events'][0]['message']['text'] == "โปรโมชั่น
 	$arrPostData = array();
 	$arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
 	$arrPostData['messages'][0]['type'] = "text";
-	$arrPostData['messages'][0]['link'] = "http://magnoliaicecreamth.com/promotions.aspx";
+	$arrPostData['messages'][0]['text'] = "http://magnoliaicecreamth.com/promotions.aspx";
 	else
 {
   $arrPostData = array();
