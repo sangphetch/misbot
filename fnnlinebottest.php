@@ -11,6 +11,21 @@ $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
  
+ 
+ {
+  "size": {
+    "width": 2500,
+    "height": 1686
+  },
+  "selected": true,
+  "name": "Rich Menu 1",
+  "chatBarText": "Bulletin",
+  "areas": []
+}
+ 
+ 
+ 
+ 
 if($arrJson['events'][0]['message']['text'] == "สวัสดี")
 {
   $arrPostData = array();
@@ -23,7 +38,7 @@ else if($arrJson['events'][0]['message']['text'] == "ชื่ออะไร")
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันชื่อ MIS Helper".$arrJson['events'][0]['source']['user'];
+  $arrPostData['messages'][0]['text'] = "ฉันชื่อ MIS Helper";
 }
 else if($arrJson['events'][0]['message']['text'] == "ทำอะไรได้บ้าง")
 {
