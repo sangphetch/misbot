@@ -53,9 +53,11 @@ else
   $arrPostData['messages'][0]['text'] = "ฉันไม่เข้าใจคำสั่ง";
 }
 
+
+curl -v -X GET https://api.line.me/v2/bot/user/{userId}/richmenu \
+-H 'Authorization: Bearer {Qz2aCp1IyX5Iva5JTe/Jcy8B44sJkaX9TSgv2ncgYd9x0fOQ2YViKXpBpHRBvHO/ZQXTGwR6AaM4bxlApRy0H8T5tTimA3AWRBjzarvlq9B/JTm0Ce8xEFIWSblJTKivYvMy1b9rWPqHSfQLVwpyJwdB04t89/1O/w1cDnyilFU=}'
  
- 
-$ch = curl_init();
+ $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,$strUrl);
 curl_setopt($ch, CURLOPT_HEADER, false);
 curl_setopt($ch, CURLOPT_POST, true);
@@ -65,5 +67,6 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER,true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 $result = curl_exec($ch);
 curl_close ($ch);
+
  
 ?>
